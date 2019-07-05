@@ -1,0 +1,26 @@
+@import "variable";
+@import "reset";
+//全站設定
+@import "base";
+//mixin
+@import "mixin/media";
+@import "mixin/mixin";
+@import "module/buttons-min";
+// @import "main";
+//layout 表頭表尾
+// @import "layout";
+// @import "index";
+// @import "cart";
+
+.box{
+  height: 50px;
+  width: 50px;
+  float: left;
+  background-color: white;
+}
+@for $i from 1 through 5{
+	.box-#{ $i}{
+		background-color: darken(white,$i * 10%);
+  }
+}
+

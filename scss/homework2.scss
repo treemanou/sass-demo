@@ -1,0 +1,91 @@
+@import "mixin/media";
+
+
+.header {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../asset/img/header_desktop.png);
+    background-repeat: no-repeat;
+
+    .banner {
+        min-height: 420px;
+      }
+
+    .menu ul{
+        a {
+            display: block;
+        }
+        &:hover {
+            font-weight: bolder;
+        }
+    }
+
+    .hamburger-menu {
+        display: none;
+        @include media-768{
+            display: block;
+            float: right;
+        }
+    }
+
+    @include media-568{
+        background-image: url(../asset/img/header_mobile.png);
+    }
+  }
+   
+//   @media (max-width: 568px) {
+//     .header {
+//          background-image: url(../asset/img/header_mobile.png);
+//     }
+//   }
+   
+//   @media (max-width: 768px) {
+//     .header .hamburger-menu {
+//       display: block;
+//       float: right;
+//     }
+   
+//   }
+   
+.content{
+    background: #000;
+
+    li{
+        color: #000;
+
+        @include media-768{
+            color: #ff0000
+        }
+
+        @include media-568{
+            display: none
+        }
+    }
+
+    @include media-960{
+        float: left;
+        width: 48%;
+    }
+
+    
+
+}
+   
+//   @media (max-width: 960px) {
+//     .content{
+//       float: left;
+//       width: 48%;
+//     }
+//   }
+  
+//   @media (max-width: 768px) {
+//     .content li {
+//      color: #ff0000
+//     }
+//   }
+   
+//   @media (max-width: 568px) {
+//     .content li {
+//      display: none
+//     }
+//   }

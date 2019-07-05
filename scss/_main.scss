@@ -1,0 +1,61 @@
+
+.header {
+    background-size: cover;
+    background-position: center center;
+    background-image: url($head-img-url);
+    background-repeat: no-repeat;
+
+    .banner {
+        min-height: 420px;
+    }
+
+    .menu-bg {
+        min-height: 58px;
+        background: $backdground;
+        position: relative;
+    }
+
+    .menu ul {
+        top: 0;
+        
+        a {
+            display: block;
+        }
+
+        li {
+            color: $white-color;
+
+            &:hover {
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .banner-title {
+        max-width: 460px;
+        background: $backdground;
+        color: $white-color;
+    }
+
+    .main-menu {
+        background: $backdground;
+        overflow: hidden;
+
+        &:hover {
+            background: $backdground;
+          }
+      }
+
+      .hamburger-menu {
+        display: block;
+        float: right;
+      }
+
+      .menu-show {
+        max-height: 165px;
+      }
+
+      .block-md {
+        display: block;
+      }
+  }
